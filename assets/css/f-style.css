@@ -1,0 +1,132 @@
+.cbp-ig-grid {
+  list-style: none;
+  padding: 0 0 50px;
+  margin: 0; }
+
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+  content: " ";
+  display: table; }
+
+.cbp-ig-grid:after {
+  clear: both; }
+
+.cbp-ig-grid li {
+  width: 25%;
+  float: left;
+  height: 200px;
+  text-align: center; }
+
+.cbp-ig-grid li > span {
+  display: block;
+  height: 100%;
+  color: #60be86;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+  cursor: pointer; }
+
+.cbp-ig-icon, .svg-icon svg {
+  padding: 30px 0 0;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -moz-transform 0.2s;
+  transition: transform 0.2s; }
+
+.cbp-ig-icon:before, .svg-icon svg {
+  font-family: 'devicon';
+  font-size: 6em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.cbp-ig-grid .cbp-ig-title {
+  margin: 20px 0 10px;
+  font-size: 1em;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s; }
+
+.cbp-ig-grid .cbp-ig-title:before {
+  content: '';
+  position: absolute;
+  background: #60be86;
+  width: 60px;
+  height: 2px;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -30px;
+  -webkit-transition: margin-top 0.2s;
+  -moz-transition: margin-top 0.2s;
+  transition: margin-top 0.2s; }
+
+.cbp-ig-grid li > span:hover {
+  background: #60be86; }
+
+.cbp-ig-grid li > span:hover .cbp-ig-icon {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px); }
+
+.cbp-ig-grid li > span:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > span:hover .cbp-ig-title {
+  color: #fff; }
+
+.cbp-ig-grid li > span:hover .cbp-ig-title {
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  transform: translateY(-15px); }
+
+.cbp-ig-grid li > span:hover .cbp-ig-title:before {
+  background: #fff;
+  margin-top: 80px; }
+
+@media only screen and (max-width: 700px) {
+  ul.feature-icons li {
+    display: flex;
+    justify-content: center;
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  ul.feature-icons li {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+}
+
+ul.feature-icons li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.svg-icon svg, .cbp-ig-icon {
+  width: 60%;
+}
+
+.svg-icon svg path {
+  fill: #60be86;
+}
+
+.svg-icon:hover svg path {
+  fill: #fff;
+} 
+
+ul.feature-icons li {
+  height: 100%;
+}
+
+.cbp-ig-icon, .svg-icon svg {
+  padding: 5px 0 0 0;
+}
