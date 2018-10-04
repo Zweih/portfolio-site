@@ -5,7 +5,7 @@ $(document).ready(() => {
     const span = spans.get(i);
     const classArr = span.className.split(/\s+/);
     const svgUrl = `./assets/svg/${classArr[1]}/${classArr[2]}.svg`;
-    const title = $(`h3.${classArr[2]}`);
+    const title = $(`.${classArr[2]} h3`);
     // $(span).load(`./assets/svg/${classArr[1]}/${classArr[2]}.svg`)
 
     $.get(svgUrl, (data) => {
