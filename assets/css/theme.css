@@ -1,0 +1,111 @@
+/* #wrapper {
+  background: #23272a;
+}
+
+#one .major p, ul.feature-icons li,  h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #dce3e8;
+}
+
+#main section {
+  border-top: 6px solid #3b3d41;
+} */
+
+.container .major h2 {
+  color: 	#7289da;
+}
+
+.resume-link h2 {
+  color: 	#7289da;
+  text-decoration: underline;
+}
+
+ul.feature-icons li:before {
+  background-color: #7289da;
+}
+
+#header, #titleBar .toggle:before {
+  background: #7289da;
+  background-color: #7289da;
+  border-right: #7289da;
+}
+
+#header, #header header {
+  border-left: #7289da;
+}
+
+#header > nav ul li a.active {
+  color: #7289da !important;
+}
+
+#header > nav ul li {
+    border-top: solid 2px #e4e4e44f;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+#header > footer .icons li a {
+  color: #eeeff5 !important;
+}
+
+#header > header p {
+  color: #ffffff;
+}
+
+ul.resume-stuff {
+  list-style: none;
+}
+
+.button.primary {
+  background-color: #7289da;
+  margin-bottom: 15px;
+}
+
+.button.primary:hover {
+  background-color: #5a74d0;
+}
+
+.container h3 {
+  font-size: 1.75em;
+}
+
+ul.feature-icons p {
+  font-weight: 700;
+  color: #777;
+}
+
+#titleBar, #wrapper, #main, .toggle {
+  border-right: #7289da;
+}
+
+@media screen and (max-width: 374px) {
+  .button {
+    font-size: 5vw !important;
+  }
+}
+
+/* article .image {
+  vertical-align: top !important;
+}
+
+.proj-buttons a {
+  margin: 10px;
+} */
+
+
+
+.proj-buttons {
+  display: flex;
+  align-items: baseline
+}
+
+.proj-buttons a.alt {
+  margin-left: 5px;
+}
+
+.inner p {
+  margin-bottom: 0.75em !important;
+}

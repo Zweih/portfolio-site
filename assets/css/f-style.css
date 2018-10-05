@@ -1,37 +1,43 @@
 .cbp-ig-grid {
   list-style: none;
   padding: 0 0 50px;
-  margin: 0; }
+  margin: 0;
+}
 
 .cbp-ig-grid:before,
 .cbp-ig-grid:after {
   content: " ";
-  display: table; }
+  display: table;
+}
 
 .cbp-ig-grid:after {
-  clear: both; }
+  clear: both;
+}
 
 .cbp-ig-grid li {
   width: 25%;
   float: left;
   height: 200px;
-  text-align: center; }
+  text-align: center;
+}
 
 .cbp-ig-grid li > span {
   display: block;
   height: 100%;
-  color: #60be86;
+  color: #7289da;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
-  cursor: pointer; }
+  /* cursor: pointer;  */
+}
 
 .cbp-ig-icon, .svg-icon svg {
   padding: 30px 0 0;
   display: block;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -moz-transform 0.2s;
-  transition: transform 0.2s; }
+  transition: transform 0.2s; 
+}
 
 .cbp-ig-icon:before, .svg-icon svg {
   font-family: 'devicon';
@@ -42,7 +48,8 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 .cbp-ig-grid .cbp-ig-title {
   margin: 20px 0 10px;
@@ -50,12 +57,13 @@
   position: relative;
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+}
 
 .cbp-ig-grid .cbp-ig-title:before {
   content: '';
   position: absolute;
-  background: #60be86;
+  background: 	#7289da;
   width: 60px;
   height: 2px;
   top: 0;
@@ -66,27 +74,32 @@
   transition: margin-top 0.2s; }
 
 .cbp-ig-grid li > span:hover {
-  background: #60be86; }
+  background: 	#7289da;
+}
 
 .cbp-ig-grid li > span:hover svg {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
-  transform: translateY(10px); }
+  transform: translateY(10px);
+}
 
 .cbp-ig-grid li > span:hover .cbp-ig-icon:before,
 .cbp-ig-grid li > span:hover .cbp-ig-title {
-  color: #fff; }
+  color: #fff;
+}
 
 .cbp-ig-grid li > span:hover .cbp-ig-title {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
-  transform: translateY(-10px); }
+  transform: translateY(-10px);
+}
 
 .cbp-ig-grid li > span:hover .cbp-ig-title:before {
   background: #fff;
-  margin-top: 80px; }
+  margin-top: 80px;
+}
 
 @media only screen and (max-width: 700px) {
   ul.feature-icons li {
@@ -94,17 +107,34 @@
     justify-content: center;
     width: 30%;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.feature-icons li span {
+    /* width: 200%; */
+    /* min-width: 90px; */
+    max-height: 90px;
+    width: 60%;
+  }
 
   ul.feature-icons li span {
-    width: 200%
+    /* width: 200%; */
+    /* min-width: 90px; */
+    max-height: 90px;
   }
 }
+
 
 @media only screen and (max-width: 350px) {
   ul.feature-icons li {
     display: flex;
     justify-content: center;
-    width: 75%;
+    width: 60%;
+  }
+  ul.feature-icons li span {
+    /* width: 200%; */
+    min-width: 90px;
+    /* max-height: 90px; */
   }
 }
 
@@ -120,7 +150,7 @@ ul.feature-icons li span {
 }
 
 .svg-icon svg path, .svg-icon svg g{
-  fill: #60be86;
+  fill: #7289da;
 }
 
 .svg-icon:hover svg path, .svg-icon:hover svg g {
