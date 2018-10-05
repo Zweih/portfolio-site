@@ -37,7 +37,8 @@ ul.feature-icons li:before {
   border-left: #7289da;
 }
 
-#header > nav ul li a.active {
+#header > nav ul li a.active, #header > nav ul li a:hover {
+  background: #ffffff;
   color: #7289da !important;
 }
 
@@ -81,7 +82,11 @@ ul.feature-icons p {
   border-right: #7289da;
 }
 
-@media screen and (max-width: 374px) {
+.container .resume.button {
+  padding: 0 10px 0 10px !important;
+}
+
+@media screen and (max-width: 380px) {
   .button {
     font-size: 5vw !important;
   }
