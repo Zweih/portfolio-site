@@ -15,4 +15,9 @@ $(document).ready(() => {
      }
     );
   }
+
+  spans.click(function() {
+    spans.removeClass("active");
+    $(this).toggleClass("active");
+  });
 });

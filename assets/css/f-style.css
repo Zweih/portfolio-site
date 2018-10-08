@@ -73,11 +73,13 @@
   -moz-transition: margin-top 0.2s;
   transition: margin-top 0.2s; }
 
-.cbp-ig-grid li > span:hover {
+.cbp-ig-grid li > span:hover, 
+.cbp-ig-grid li > span.active {
   background: 	#7289da;
 }
 
-.cbp-ig-grid li > span:hover svg {
+.cbp-ig-grid li > span:hover svg, 
+.cbp-ig-grid li > span.active svg {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -85,18 +87,22 @@
 }
 
 .cbp-ig-grid li > span:hover .cbp-ig-icon:before,
-.cbp-ig-grid li > span:hover .cbp-ig-title {
+.cbp-ig-grid li > span:hover .cbp-ig-title, 
+.cbp-ig-grid li > span.active .cbp-ig-icon:before,
+.cbp-ig-grid li > span.active .cbp-ig-title {
   color: #fff;
 }
 
-.cbp-ig-grid li > span:hover .cbp-ig-title {
+.cbp-ig-grid li > span:hover .cbp-ig-title, 
+.cbp-ig-grid li > span.active .cbp-ig-title {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
-.cbp-ig-grid li > span:hover .cbp-ig-title:before {
+.cbp-ig-grid li > span:hover .cbp-ig-title:before,
+.cbp-ig-grid li > span.active .cbp-ig-title:before {
   background: #fff;
   margin-top: 80px;
 }
@@ -153,7 +159,10 @@ ul.feature-icons li span {
   fill: #7289da;
 }
 
-.svg-icon:hover svg path, .svg-icon:hover svg g {
+.svg-icon:hover svg path, 
+.svg-icon:hover svg g, 
+.svg-icon.active svg path, 
+.svg-icon.active svg g {
   fill: #fff;
 } 
 
