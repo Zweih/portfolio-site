@@ -52,6 +52,25 @@ ul.feature-icons li:before {
   color: #eeeff5 !important;
 }
 
+#one .top-links {
+	display: flex;
+	align-items: baseline;
+}
+
+#one .icons {
+	margin-left: 15px;
+}
+
+#header > footer .icons li a:hover {
+  color: #bcbcc0dc !important;
+}
+
+#one .icons li a {
+	width: 60px;
+	display: flex;
+  justify-content: center;
+}
+
 #header > header p {
   color: #ffffff;
 }
@@ -63,6 +82,10 @@ ul.resume-stuff {
 .button.primary {
   background-color: #7289da;
   margin-bottom: 15px;
+}
+
+input.primary {
+	background-color: #7289da !important;
 }
 
 .button.primary:hover {
@@ -100,7 +123,18 @@ ul.feature-icons p {
   margin: 10px;
 } */
 
+.features article {
+	margin-bottom: 1.25em;
+	padding-top: 1.25em;
+}
 
+#main > section > .container {
+	padding: 2em 0 0 0;
+}
+
+.features article .image {
+	vertical-align: top;
+}
 
 .proj-buttons {
   display: flex;
