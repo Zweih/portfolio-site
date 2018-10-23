@@ -54,11 +54,11 @@ ul.feature-icons li:before {
 
 #one .top-links {
 	display: flex;
-	align-items: baseline;
 }
 
 #one .icons {
-	margin-left: 15px;
+	margin-left: 20px;
+	margin-bottom: 10px;
 }
 
 #header > footer .icons li a:hover {
@@ -68,7 +68,19 @@ ul.feature-icons li:before {
 #one .icons li a {
 	width: 60px;
 	display: flex;
-  justify-content: center;
+	justify-content: center;
+}
+
+
+@media only screen and (max-width: 530px) {
+	#one .top-links {
+		flex-direction: column;
+	}
+	
+	#one .icons {
+		align-self: center;
+		margin-left: 0;
+	}
 }
 
 #header > header p {
@@ -126,6 +138,11 @@ ul.feature-icons p {
 .features article {
 	margin-bottom: 1.25em;
 	padding-top: 1.25em;
+}
+
+.features article .image {
+	margin-top: 8px;
+	margin-bottom: 1.25em;
 }
 
 #main > section > .container {
