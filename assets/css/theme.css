@@ -121,6 +121,10 @@ ul.feature-icons p {
   padding: 0 10px 0 10px !important;
 }
 
+.top-links ul.icons li {
+	padding: 0 0.5em 0 0!important;
+}
+
 @media screen and (max-width: 380px) {
   .button {
     font-size: 5vw !important;
